@@ -1,0 +1,21 @@
+lzc-sdk-version: 0.1
+name: lobechat
+package: cloud.lazycat.app.lobechat
+version: 1.31.9
+description: AI 聊天工具
+license: https://github.com/lobehub/lobe-chat#License-1-ov-file
+homepage: https://github.com/lobehub/lobe-chat
+author: Lobehub
+
+application:
+  subdomain: lobechat
+  background_task: true
+  routes:
+    - /=http://lobechat.cloud.lazycat.app.lobechat.lzcapp:3210
+
+services:
+  lobechat:
+    image: lobehub/lobe-chat:v1.31.9
+
+    environment:
+      - KEY_VAULTS_SECRET=ofcourseistillloveyou
