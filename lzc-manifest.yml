@@ -15,7 +15,7 @@ application:
 
 services:
   lobechat:
-    image: lobehub/lobe-chat:v1.31.9
+    image: registry.lazycat.cloud/lobehub/lobe-chat:v1.31.9
 
     environment:
       - KEY_VAULTS_SECRET=ofcourseistillloveyou
